@@ -49,6 +49,7 @@ public class StepDefinition extends BaseClass {
 		dropDown(searchHotelPage.getRoomType(), roomType);
 		dropDown(searchHotelPage.getRoomNum(), noOfRooms);
 		searchHotelPage.getDateCheckIn().clear();
+
 		fill(searchHotelPage.getDateCheckIn(), dateCheckIn);
 		searchHotelPage.getDateCheckOut().clear();
 		fill(searchHotelPage.getDateCheckOut(), dateCheckOut);
@@ -66,6 +67,7 @@ public class StepDefinition extends BaseClass {
 	@Then("user should verfiy navigates to select hotel")
 	public void user_should_verfiy_navigates_to_select_hotel() {
 		verify("http://adactinhotelapp.com/SelectHotel.php");
+		
 	}
 
 	@Then("user should select the hotel and click the continue button")
@@ -121,7 +123,7 @@ public class StepDefinition extends BaseClass {
 
 	@Then("user should verify empty error message")
 	public void user_should_verify_empty_error_message() {
-		
+
 		errorMsg(searchHotelPage.getEmptyError());
 	}
 

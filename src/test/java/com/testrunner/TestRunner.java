@@ -17,7 +17,7 @@ public class TestRunner {
 	
 	@AfterClass
 	public static void report() {
-		Reporting.generateReport("C:\\Users\\Acer\\eclipse-workspace\\AdactinPage\\src\\test\\resources\\report\\.dinu.json");
+		Reporting.generateReport("C:\\Users\\Acer\\eclipse-workspace\\AdactinPage\\src\\test\\resources\\report.json");
 	}
 	
 	
